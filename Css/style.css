@@ -1,0 +1,254 @@
+
+
+
+
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.3); /* semi-transparent dark */
+}
+.banner{
+    background-image: url(https://images.unsplash.com/photo-1526289034009-0240ddb68ce3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGFyayUyMHBhdHRlcm58ZW58MHx8MHx8fDA%3D);
+    
+    padding:120px 0;
+    background-size: cover;
+    background-repeat:no-repeat;
+    max-height: 120vh;
+      object-fit: cover;
+      width: 100;
+     
+      
+   
+}
+.text-stroke{
+    color: rgb(87, 172, 87);
+    
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+ .nav-link:focus,
+ .nav-link:active {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.text-color{
+  color:rgb(36, 206, 101);
+  text-decoration-color: bisque;
+ 
+}
+.comp-name{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.project-img {
+      width: 100%;
+      height: 110px; /* Fixed height */
+      object-fit: cover; /* Crop image to fill */
+      border-radius: 8px;
+    }
+    .img-wrapper {
+      width: 100%;
+      aspect-ratio: 4 / 3; /* Forces same shape */
+      overflow: hidden;
+      border-radius: 8px;
+       }
+
+       .project-work{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+       }
+       .project-work-img{
+        width:400px;
+        height: 300px;
+        border:2px solid #ff3d0036;
+        border-radius: 13px;
+        box-shadow:4px 7px 7px 0px;
+        cursor: pointer;
+        margin: 10px; transition: 400ms;
+      
+
+       }
+       .project-work-img:hover{
+        filter: grayscale(1);
+        transform: scale(1.03);
+       }
+        img{
+
+          max-width: 100%;
+
+        }
+       .gallery{
+        background-color: gray;
+        padding:80px 0;
+       }
+
+       .light-img-1,.light-img-2{
+         margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+       }
+.neon-button {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #00f0ff;
+  border-radius: 50px;
+  background-color: transparent;
+  text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;
+  box-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+  transition: 0.3s ease;
+}
+
+.neon-button:hover {
+  background-color: #00f0ff;
+  color: #000;
+  box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 30px #00f0ff;
+}
+
+
+.btn-project{
+  width:480px 0;
+  padding: 10px 120px;
+ 
+}
+
+.project-section{
+ 
+ 
+  background-size: cover;      /* Ensures the image covers the entire section */
+  background-position: center; /* Keeps the image centered */
+  background-repeat: no-repeat;
+  height: 100vh;               /* Full viewport height */
+  width: 100%;                 /* Full width */
+  color: white;                /* Optional: Text color for contrast */
+  display: flex;               /* Optional: Centering text */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-quotes{
+  color:rgb(190, 23, 23);
+  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.form-background{
+  background:#e8e8e8;
+}
+.form-area{
+  padding-top:7%;
+}
+
+.row.single-form{
+  box-shadow: 0 2px 20px -5px;
+  background:#fff;
+}
+
+.left{
+  background:blueviolet;
+
+  padding:200px 93px;
+}
+.left h2{
+
+  font-family:poppins;
+  color:#fff;
+  font-weight:700;
+  font-size: 48px;
+}
+
+.left h2 span{
+  font-weight: 100;
+}
+
+.right{
+  padding:70px 100px;
+  position:relative;
+
+}
+
+
+.right i{
+
+  position:absolute;
+  font-size:80px;
+  left:-27px;
+  top:40%;
+ color:#fff;
+
+}
+
+.form-control{
+  border:2px solid #000; 
+}
+
+
+.right button{
+  border: none;
+  border-radius: 0;
+  background:#252525;
+  width:180px;
+  color:#fff;
+  padding:15px 0;
+  display:inline-block;
+  font-size:16px;
+  margin-top:20px;
+  cursor:pointer;
+
+}
+.right button:hover{
+  background:#252525;
+
+}
+ @media(min-width:768px) and (max-width:991px){
+
+  .right i{
+    top:-52px;
+    transition: rotate(90deg);
+    left:50%;
+  }
+ }
+ @media(max-width:767px){
+  .left{
+
+    padding:90px 15px;
+    text-align: center;
+  }
+  .left h2{
+    font-size:25px;
+  }
+  .right{
+    padding:25px;
+  }
+  .right i{
+    top:-52px;
+    transition: rotate(90deg);
+    left:45%;
+  }
+  .right button{
+
+    width:150px;
+    padding:12px 0;
+  }
+ }
+
+ .fade-in-error {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
