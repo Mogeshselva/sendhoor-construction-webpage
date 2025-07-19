@@ -252,3 +252,11 @@
     transform: translateY(0);
   }
 }
+.submit-btn{
+  padding:10px 80px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  margin-top:30px;
+  font-weight: 500;
+}
